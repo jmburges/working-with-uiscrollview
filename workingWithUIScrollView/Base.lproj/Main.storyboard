@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten3.png" translatesAutoresizingMaskIntoConstraints="NO" id="UbW-zs-vgT">
+                                <rect key="frame" x="395" y="200" width="190" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="R4G-kN-s4v"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten2.png" translatesAutoresizingMaskIntoConstraints="NO" id="qvf-Ce-lrh">
+                                <rect key="frame" x="206" y="200" width="189" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="m69-uk-9uK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten1.png" translatesAutoresizingMaskIntoConstraints="NO" id="81z-oG-8MA">
+                                <rect key="frame" x="16" y="200" width="190" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Aiv-Y3-tgT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="81z-oG-8MA" secondAttribute="centerY" id="2OK-AG-46L"/>
+                            <constraint firstAttribute="centerY" secondItem="UbW-zs-vgT" secondAttribute="centerY" id="HdA-dQ-r7f"/>
+                            <constraint firstItem="UbW-zs-vgT" firstAttribute="width" secondItem="qvf-Ce-lrh" secondAttribute="width" id="LG6-1V-FMh"/>
+                            <constraint firstItem="qvf-Ce-lrh" firstAttribute="leading" secondItem="81z-oG-8MA" secondAttribute="trailing" id="OxQ-vh-85t"/>
+                            <constraint firstItem="81z-oG-8MA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Xd3-K0-kap"/>
+                            <constraint firstItem="UbW-zs-vgT" firstAttribute="leading" secondItem="qvf-Ce-lrh" secondAttribute="trailing" id="gfW-WW-gD7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UbW-zs-vgT" secondAttribute="trailing" id="iXA-BM-OIZ"/>
+                            <constraint firstItem="81z-oG-8MA" firstAttribute="width" secondItem="qvf-Ce-lrh" secondAttribute="width" id="ihL-dw-HNp"/>
+                            <constraint firstAttribute="centerY" secondItem="qvf-Ce-lrh" secondAttribute="centerY" id="mko-6D-Uq7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kitten1CenterY" destination="2OK-AG-46L" id="SOg-ae-tZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="419"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitten1.png" width="800" height="925"/>
+        <image name="kitten2.png" width="347" height="346"/>
+        <image name="kitten3.png" width="1280" height="930"/>
+    </resources>
+</document>
